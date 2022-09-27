@@ -1,0 +1,106 @@
+//variables
+$color-principal: #9A100D;
+$color-uno: #FF393E;
+$color-dos: #333;
+$color-tres: #FFA0A0;
+$color-letra: #ffffff;
+$font-sizeh1: 3.5em;
+$font-sizeh2: 2.7em;
+$font-sizeh3: 2em;
+$font-sizeBotton: 1.75 em;
+$font-sizeP: 1.25 em;
+
+@import "header";
+@import "main";
+@import "body";
+@import "caracteristicas";
+@import "footer";
+
+@media only screen and (min-width:1200px) {
+    header {
+        width: 100%;
+    }
+
+    header .conteiner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        padding-bottom: 0;
+        padding-right: 10px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #section-edite-one h1 {
+        font-size: 5em;
+    }
+
+    #section-edite-two .conteiner {
+        grid-template-rows: .5ft repeat(2,1fr) .5;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #section-edite-two .texto {
+        width: 50%;
+        text-align: center;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #section-edite-two h2 {
+        margin-top: 30px;
+    }
+
+    .img-conteiner {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url(../media/colecciones7.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 800px;
+    }
+
+    .modelos {
+        display: grid;
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 20px;
+
+    }
+
+    #section-edite-three p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #section-edite-three h3 {
+        margin-top: 0;
+    }
+
+    .container-form{
+        width: 50%;
+        flex-direction:column;
+    }
+}
+
+@keyframes fanimado{ 
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position:100% 50% ;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,36 @@
+#caracteristicas-comada {
+    padding: 10px;
+    border: 5px hidden bisque;
+    margin: 1px 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #ffffff;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/idead_backgraund6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cemter center;
+
+    .coneteiner {
+        text-align: center;
+        padding: 200px 12px;
+        text-decoration: none;
+    }
+
+    li {
+        margin: 20px 0px;
+        font-weight: bolder;
+        font-size: 3em;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff
+    }
+}

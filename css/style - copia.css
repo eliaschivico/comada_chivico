@@ -1,0 +1,659 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-size: 500%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25;
+}
+
+ul {
+    padding: 10px;
+    border: 2px hidden bisque;
+    margin: 1px 1px 1px;
+    list-style: none;
+
+}
+
+li {
+    font-size: 1.25em;
+    padding: 2px;
+    border: 1px;
+    overflow: hidden;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: #FF393E;
+}
+
+button:hover {
+    background-color: #FFA0A0;
+}
+
+header {
+    background-color: #000000;
+}
+
+header .logo {
+    margin: 0px 0px 0px;
+    border: 1px hidden bisque;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 4.6em;
+
+}
+
+nav {
+    padding: 1px;
+    border: 2px hidden bisque;
+    margin: 0px 1px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+a {
+    border: 2px hidden bisque;
+    margin: 1px 1px 1px;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #FFA0A0;
+}
+
+footer {
+    background-color: #FFA0A0;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: #9A100D;
+
+}
+
+footer .conteiner {
+    padding: 10px;
+    border: 1px hidden rgb(0, 0, 0);
+    margin: 1px 1px 1px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.conteiner {
+    max-width: 1300px;
+    margin: 100%;
+}
+
+.color-clave {
+    color: #FFA0A0;
+}
+
+.texto {
+    background-image: linear-gradient(135deg,
+    #FF393E, #9A100D, rgb(131, 131, 131));
+    animation: fanimado 10s infinite;
+    background-size: 500%;
+}
+
+.conteiner {
+    padding: 1px;
+    border: 30px hidden bisque;
+    margin: 1px 1px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+#section-edite-one h2 {
+    color: #ffffff;
+}
+
+#section-edite-one button {
+    font-size: 1.75em;
+}
+
+
+#section-edite-one {
+    display: grid;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 12px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/ideas_backgraund3.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#section-edite-two {
+    display: grid;
+    text-align: center;
+    padding: 50px 12px;
+    margin: 20px;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 0;
+}
+
+#section-edite-two .conteiner {
+    display: flex;
+}
+
+#section-edite-three .modelos {
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+#section-edite-three p {
+    display: block;
+    margin: 1em;
+}
+
+#section-edite-three h3 {
+    margin-top: 0;
+}
+
+
+#section-edite-three {
+    padding: 1px;
+    margin: 1px;
+    border: 1px;
+    display: grid;
+    background-color: #9A100D;
+    color: #ffffff;
+    text-align: center;
+}
+
+#section-edite-three h2 {
+    margin-top: 0;
+    font-size: 3.2em
+}
+
+#section-edite-three p {
+    display: none;
+}
+
+#section-edite-oneCole {
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 12px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_ropa2.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+.mainCole {
+    background-color: #9A100D;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item:nth-child(7) {
+    grid-row-start: span 3;
+}
+
+.gallery__item:nth-child(1) {
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(6) {
+    grid-row-start: span 3;
+}
+
+.gallery__item:nth-child(8) {
+    grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(2) {
+    grid-row-start: span 3;
+}
+
+
+#section-edite-oneCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 12px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_ropa2.jpg);
+
+}
+
+#section-edite-oneDep {
+    font-weight: 400;
+    height: 100%;
+    overflow-anchor: none;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 200px 12px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/backgraund_deportes2.jpg);
+    background-size: cover;
+}
+
+#section-edite-oneDep div {
+    margin: 16px;
+}
+
+#section-edite-oneOfer {
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 12px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_mujer3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.modelos {
+    display: grid;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+.modelos:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/ideas_backgraund2.jpg);
+}
+
+.modelos:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/idead_backgraund6.jpg);
+
+}
+
+.modelos:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../media/ideas_backgraund3.jpg);
+}
+
+.modelos:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/geisha_modelo2.jpg);
+}
+
+#caracteristicas-comada {
+    padding: 10px;
+    border: 5px hidden bisque;
+    margin: 1px 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #ffffff;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/idead_backgraund6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cemter center;
+}
+
+#caracteristicas-comada .conteiner {
+    text-align: center;
+    padding: 200px 12px;
+    text-decoration: none;
+}
+
+#caracteristicas-comada li {
+    margin: 20px 0px;
+    font-weight: bolder;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+#caracteristicas-comada a {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 50px;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px
+}
+
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container-form a i {
+    color: #FF393E;
+    margin-right: 10px;
+}
+
+.container-form form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #FF393E;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+    background: #FFA0A0;
+}
+
+.mainOfertas main {
+    display: flex;
+    justify-content: center;
+}
+
+.conte_parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.conte {
+    height: 510px;
+    width: 350px;
+    box-shadow: 0 0 7px #111;
+    margin: 30px 30px;
+}
+
+.conte .card {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 170px;
+}
+
+.card img {
+    margin: auto;
+    display: block;
+}
+
+.conte .niño img {
+    height: 330px;
+    width: 300px;
+
+}
+
+.conte .niño {
+    background-color: #9A100D;
+}
+
+.conte .damas {
+    background-color: #9A100D;
+}
+
+.conte .caballeros {
+    background-color: #9A100D;
+}
+
+.conte .damas img {
+    height: 330px;
+    width: 230px;
+}
+
+.conte .caballeros img {
+    height: 330px;
+    width: 300px;
+}
+
+.informacion {
+    height: 80px;
+    width: 100%;
+}
+
+.informacion h1 {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.informacion p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .9em;
+    color:  #333;
+}
+
+.precio {
+    height: 50px;
+    width: 85%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-precio {
+    width: 80px;
+}
+
+.precio1 {
+    color:  #333;
+    font-size: .8em;
+}
+
+.precio .precio2 {
+    font-size: 1.5em;
+}
+
+.shoping {
+    font-size: 1.5em;
+    color:  #333;
+}
+
+
+@media only screen and (min-width:1200px) {
+    header {
+        width: 100%;
+    }
+
+    header .conteiner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        padding-bottom: 0;
+        padding-right: 10px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #section-edite-one h1 {
+        font-size: 5em;
+    }
+
+    #section-edite-two .conteiner {
+        grid-template-rows: .5ft repeat(2,1fr) .5;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #section-edite-two .texto {
+        width: 50%;
+        text-align: center;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #section-edite-two h2 {
+        margin-top: 30px;
+    }
+
+    .img-conteiner {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url(../media/colecciones7.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 800px;
+    }
+
+    .modelos {
+        display: grid;
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 20px;
+
+    }
+
+    #section-edite-three p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #section-edite-three h3 {
+        margin-top: 0;
+    }
+
+    .container-form{
+        width: 50%;
+        flex-direction:column;
+    }
+}
+
+@keyframes fanimado{ 
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position:100% 50% ;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
