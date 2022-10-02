@@ -1,42 +1,48 @@
+.color-clave {
+    color: #FFA0A0;
+}
 
-    .texto {
-        background-image: linear-gradient(135deg,
-                #FF393E, #9A100D, rgb(131, 131, 131));
-        animation: fanimado 10s infinite;
-        background-size: 500%;
+
+.texto {
+    background-image: linear-gradient(135deg,
+            #FF393E, #9A100D, rgb(131, 131, 131));
+    animation: fanimado 10s infinite;
+    background-size: 500%;
+}
+
+#section-edite-one {
+    display: grid;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 12px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/ideas_backgraund3.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+button {
+    font-size: 1.75em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: #FF393E;
+    font-size: 1.75em;
+
     }
 
-    #section-edite-one {
-        display: grid;
-        color: #ffffff;
-        text-align: center;
-        padding: 200px 12px;
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)), url(../media/ideas_backgraund3.jpg);
-        background-repeat: repeat;
-        background-size: cover;
-    }
 
-    h2 {
-        color: #ffffff;
-    }
-
-    button {
-        font-size: 1.75em;
-        font-weight: bold;
-        padding: 10px 30px;
-        border-radius: 50px;
-        border: 2px solid #ffffff;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        color: rgb(255, 255, 255);
-        background-color: $color-uno;
-        font-size: 1.75em;
-    }
-
-    button:hover {
-        background-color: #FFA0A0;
-    }
+button:hover {
+    background-color: #FFA0A0;
+}
 
 main {
     #section-edite-two {
@@ -54,10 +60,6 @@ main {
         display: flex;
     }
 
-    .color-clave {
-        color: $color-tres;
-    }
-
     .modelos {
         display: grid;
         background-position: center center;
@@ -65,34 +67,34 @@ main {
         padding: 50px;
         margin: 20px;
         border-radius: 100px;
-        
+
     }
 
-        .modelos:first-child {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)), url(../media/ideas_backgraund2.jpg);
-        }
-        
-        .modelos:nth-child(2) {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)), url(../media/idead_backgraund6.jpg);
-        
-        }
-        
-        .modelos:nth-child(3) {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)),
-                url(../media/ideas_backgraund3.jpg);
-        }
-        
-        .modelos:nth-child(4) {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)), url(../media/geisha_modelo2.jpg);
-        }
+    .modelos:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(../media/ideas_backgraund2.jpg);
+    }
+
+    .modelos:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(../media/idead_backgraund6.jpg);
+
+    }
+
+    .modelos:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url(../media/ideas_backgraund3.jpg);
+    }
+
+    .modelos:nth-child(4) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(../media/geisha_modelo2.jpg);
+    }
 }
 
 #section-edite-three {
@@ -118,19 +120,9 @@ main {
     h3 {
         margin-top: 0;
     }
-    
+
 }
 
-#section-edite-oneCole {
-    color: #ffffff;
-    text-align: center;
-    padding: 200px 12px;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_ropa2.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-}
 
 
 .mainCole {
@@ -171,6 +163,17 @@ main {
     grid-row-start: span 3;
 }
 
+#section-edite-oneCole {
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 12px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_ropa2.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
 
 #section-edite-oneCon {
     display: flex;
@@ -179,13 +182,9 @@ main {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color: #ffffff;
+    color: #333;
     text-align: center;
     padding: 200px 12px;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_ropa2.jpg);
-
 }
 
 #section-edite-oneDep {
@@ -201,11 +200,14 @@ main {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(../media/backgraund_deportes2.jpg);
     background-size: cover;
+
+    div {
+        margin: 16px;
+    }
+
 }
 
-#section-edite-oneDep div {
-    margin: 16px;
-}
+
 
 #section-edite-oneOfer {
     color: #ffffff;
@@ -261,7 +263,7 @@ textarea {
     width: 100%;
     padding: 15px 10px;
     font-size: 16px;
-    border: 1px solid #dbdbdb;
+    border: 1px solid #333;
     margin-bottom: 20px;
     border-radius: 3px;
     outline: 0px;
@@ -327,21 +329,13 @@ textarea {
 
 }
 
-.conte .niño {
-    background-color: #9A100D;
-}
-
-.conte .damas {
-    background-color: #9A100D;
-}
-
-.conte .caballeros {
-    background-color: #9A100D;
+.conte {
+    background-color: #FFA0A0;
 }
 
 .conte .damas img {
     height: 330px;
-    width: 230px;
+    width: 300px;
 }
 
 .conte .caballeros img {
@@ -366,7 +360,7 @@ textarea {
     text-align: center;
     font-family: sans-serif;
     font-size: .9em;
-    color:  #333;
+    color: #333;
 }
 
 .precio {
@@ -384,7 +378,7 @@ textarea {
 }
 
 .precio1 {
-    color:  #333;
+    color: #333;
     font-size: .8em;
 }
 
@@ -394,5 +388,5 @@ textarea {
 
 .shoping {
     font-size: 1.5em;
-    color:  #333;
+    color: #333;
 }

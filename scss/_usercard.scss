@@ -1,0 +1,16 @@
+.card {
+    @extend .conte_parent;
+ 
+
+    >img {
+        @extend .card;
+    }
+
+    >h1 {
+        @extend .informacion;
+    }
+
+    >precio {
+        @extend .box-precio;
+    }
+}

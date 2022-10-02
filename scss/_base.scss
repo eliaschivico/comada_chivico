@@ -1,0 +1,101 @@
+.conte_parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.conte {
+    height: 510px;
+    width: 350px;
+    box-shadow: 0 0 7px #111;
+    margin: 30px 30px;
+}
+
+.conte .card {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 170px;
+}
+
+.card img {
+    margin: auto;
+    display: block;
+}
+
+.conte .niño img {
+    height: 330px;
+    width: 300px;
+
+}
+
+.conte .niño {
+    background-color: #9A100D;
+}
+
+.conte .damas {
+    background-color: #9A100D;
+}
+
+.conte .caballeros {
+    background-color: #9A100D;
+}
+
+.conte .damas img {
+    height: 330px;
+    width: 230px;
+}
+
+.conte .caballeros img {
+    height: 330px;
+    width: 300px;
+}
+
+.informacion {
+    height: 80px;
+    width: 100%;
+}
+
+.informacion h1 {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.informacion p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .9em;
+    color:  #333;
+}
+
+.precio {
+    height: 50px;
+    width: 85%;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-precio {
+    width: 80px;
+}
+
+.precio1 {
+    color:  #333;
+    font-size: .8em;
+}
+
+.precio .precio2 {
+    font-size: 1.5em;
+}
+
+.shoping {
+    font-size: 1.5em;
+    color:  #333;
+}

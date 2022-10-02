@@ -1,20 +1,13 @@
-//variables
-$color-principal: #9A100D;
-$color-uno: #FF393E;
-$color-dos: #333;
-$color-tres: #FFA0A0;
-$color-letra: #ffffff;
-$font-sizeh1: 3.5em;
-$font-sizeh2: 2.7em;
-$font-sizeh3: 2em;
-$font-sizeBotton: 1.75 em;
-$font-sizeP: 1.25 em;
-
 @import "header";
 @import "main";
 @import "body";
 @import "caracteristicas";
 @import "footer";
+@import "variables";
+@import "usercard";
+
+
+
 
 @media only screen and (min-width:1200px) {
     header {
@@ -40,7 +33,7 @@ $font-sizeP: 1.25 em;
     }
 
     #section-edite-two .conteiner {
-        grid-template-rows: .5ft repeat(2,1fr) .5;
+        grid-template-rows: .5ft repeat(2, 1fr) .5;
         display: flex;
         justify-content: space-evenly;
     }
@@ -52,6 +45,7 @@ $font-sizeP: 1.25 em;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
 
     #section-edite-two h2 {
@@ -80,27 +74,34 @@ $font-sizeP: 1.25 em;
     #section-edite-three p {
         display: block;
         margin-bottom: 30px;
+
+        h3 {
+            margin-top: 0;
+        }
     }
 
-    #section-edite-three h3 {
-        margin-top: 0;
+
+        .container-form form textarea {
+            max-width: 10px;
+            min-width: 530px;
+            min-height: 140px;
+            max-height: 150px;
+
     }
 
-    .container-form{
-        width: 50%;
-        flex-direction:column;
-    }
-}
+    @keyframes fanimado {
+        0% {
+            background-position: 0% 50%;
+        }
 
-@keyframes fanimado{ 
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position:100% 50% ;
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+
     }
 
-    100%{
-        background-position: 0% 50%;
-    }
-}
+     }

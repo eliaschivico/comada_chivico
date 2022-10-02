@@ -1,4 +1,12 @@
 @charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
 .conteiner {
   padding: 1px;
   border: 30px hidden bisque;
@@ -66,6 +74,10 @@ nav ul li a:hover {
   color: #FFA0A0;
 }
 
+.color-clave {
+  color: #FFA0A0;
+}
+
 .texto {
   background-image: linear-gradient(135deg, #FF393E, #9A100D, rgb(131, 131, 131));
   -webkit-animation: fanimado 10s infinite;
@@ -124,9 +136,6 @@ main .img-conteiner {
   display: -ms-flexbox;
   display: flex;
 }
-main .color-clave {
-  color: #FFA0A0;
-}
 main .modelos {
   display: -ms-grid;
   display: grid;
@@ -176,16 +185,6 @@ main .modelos:nth-child(4) {
   margin-top: 0;
 }
 
-#section-edite-oneCole {
-  color: #ffffff;
-  text-align: center;
-  padding: 200px 12px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../media/coleccion_de_ropa2.jpg);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_ropa2.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-}
-
 .mainCole {
   background-color: #9A100D;
 }
@@ -227,6 +226,16 @@ main .modelos:nth-child(4) {
   grid-row-start: span 3;
 }
 
+#section-edite-oneCole {
+  color: #ffffff;
+  text-align: center;
+  padding: 200px 12px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../media/coleccion_de_ropa2.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_ropa2.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
 #section-edite-oneCon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,11 +252,9 @@ main .modelos:nth-child(4) {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 90vh;
-  color: #ffffff;
+  color: #333;
   text-align: center;
   padding: 200px 12px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../media/coleccion_de_ropa2.jpg);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_ropa2.jpg);
 }
 
 #section-edite-oneDep {
@@ -268,7 +275,6 @@ main .modelos:nth-child(4) {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/backgraund_deportes2.jpg);
   background-size: cover;
 }
-
 #section-edite-oneDep div {
   margin: 16px;
 }
@@ -328,7 +334,7 @@ textarea {
   width: 100%;
   padding: 15px 10px;
   font-size: 16px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid #333;
   margin-bottom: 20px;
   border-radius: 3px;
   outline: 0px;
@@ -367,7 +373,7 @@ textarea {
           justify-content: center;
 }
 
-.conte_parent {
+.conte_parent, .card, .card > img, .card > img > img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +394,7 @@ textarea {
   margin: 30px 30px;
 }
 
-.conte .card {
+.conte .card, .conte .card > img, .conte .card > img > img {
   height: 200px;
   width: 100%;
   margin-bottom: 170px;
@@ -404,21 +410,13 @@ textarea {
   width: 300px;
 }
 
-.conte .niño {
-  background-color: #9A100D;
-}
-
-.conte .damas {
-  background-color: #9A100D;
-}
-
-.conte .caballeros {
-  background-color: #9A100D;
+.conte {
+  background-color: #FFA0A0;
 }
 
 .conte .damas img {
   height: 330px;
-  width: 230px;
+  width: 300px;
 }
 
 .conte .caballeros img {
@@ -426,12 +424,12 @@ textarea {
   width: 300px;
 }
 
-.informacion {
+.informacion, .card > h1, .card > img > h1, .card > img > img > h1 {
   height: 80px;
   width: 100%;
 }
 
-.informacion h1 {
+.informacion h1, .card > h1 h1 {
   font-family: sans-serif;
   font-size: 1.2em;
   text-align: center;
@@ -439,7 +437,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.informacion p {
+.informacion p, .card > h1 p {
   text-align: center;
   font-family: sans-serif;
   font-size: 0.9em;
@@ -462,7 +460,7 @@ textarea {
           align-items: center;
 }
 
-.box-precio {
+.box-precio, .card > precio, .card > img > precio, .card > img > img > precio {
   width: 80px;
 }
 
@@ -478,14 +476,6 @@ textarea {
 .shoping {
   font-size: 1.5em;
   color: #333;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
 }
 
 body {
@@ -656,38 +646,38 @@ footer .conteiner {
     display: block;
     margin-bottom: 30px;
   }
-
-  #section-edite-three h3 {
+  #section-edite-three p h3 {
     margin-top: 0;
   }
 
-  .container-form {
-    width: 50%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .container-form form textarea {
+    max-width: 10px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
   }
-}
-@-webkit-keyframes fanimado {
-  0% {
-    background-position: 0% 50%;
+
+  @-webkit-keyframes fanimado {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes fanimado {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+
+  @keyframes fanimado {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
