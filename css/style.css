@@ -566,6 +566,18 @@ footer .conteiner {
           align-items: flex-end;
 }
 
+.element:before {
+  content: value;
+}
+
+.element:before {
+  content: value;
+}
+
+.element {
+  content: value;
+}
+
 @media only screen and (min-width: 1200px) {
   header {
     width: 100%;

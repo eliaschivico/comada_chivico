@@ -1,35 +1,25 @@
-$grayscale: map-merge(
-    (
-      "100": #EEF1F4,
-      "200": #DFE3E7,
-      "300": #CBCFD2,
-      "400": #B3B6B9,
-      "500": #9CA0A3,
-      "600": #7C7F82,
-      "700": #606365,
-      "800": #4A4C4F,
-      "900": #333536,
-    ),
-    $grayscale
+$map: (
+    key: value,
+    nextkey: nextvalue
 );
 
-$blue: #B5E6F5;
-$red: #FFB2AD;
-$yellow: #ADC9EA;
-$green: #D8F0D4;
+.element:before {
+  content: map-get($map, key);
+}
 
-$colors: map-merge(
-    (
-      “info: $blue,
-      “danger”: $red,
-      “warning”: $yellow,
-      “success: $green,
-    ),
-    $colors
+.element:before {
+  content: value;
+}
+
+$map: (
+    key: value,
+    nextkey: nextvalue
 );
-
-@each $name, $value in $colors {
-    .bg-#{$name} {
-      background-color: $value;
-    }
+ 
+.element {
+  @if map-has-key($map, key) {
+    content: (value );
+  } @else {
+    content: (value );
   }
+}
