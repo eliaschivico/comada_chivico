@@ -176,6 +176,7 @@ main {
 
 
 #section-edite-oneCon {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,6 +187,62 @@ main {
     text-align: center;
     padding: 200px 12px;
 }
+
+:root {
+    --colorTextos: #49454567;
+}
+
+
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px ;
+}
+
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
 
 #section-edite-oneDep {
     font-weight: 400;
@@ -210,6 +267,7 @@ main {
 
 
 #section-edite-oneOfer {
+    
     color: #ffffff;
     text-align: center;
     padding: 200px 12px;
@@ -218,78 +276,6 @@ main {
             rgba(0, 0, 0, 0.5)), url(../media/coleccion_de_mujer3.jpg);
     background-position: center;
     background-size: cover;
-}
-
-.container-form {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    margin: 50px;
-    background-repeat: repeat;
-    background-size: cover;
-}
-
-.container-form h2 {
-    margin-bottom: 15px;
-    font-size: 35px
-}
-
-.container-form p {
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.container-form a {
-    font-size: 17px;
-    display: inline-block;
-    text-decoration: none;
-    width: 100%;
-    margin-bottom: 15px;
-    color: black;
-    font-weight: 700;
-}
-
-.container-form a i {
-    color: #FF393E;
-    margin-right: 10px;
-}
-
-.container-form form .campo,
-textarea {
-    width: 100%;
-    padding: 15px 10px;
-    font-size: 16px;
-    border: 1px solid #333;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    outline: 0px;
-}
-
-.container-form form textarea {
-    max-width: 530px;
-    min-width: 530px;
-    min-height: 140px;
-    max-height: 150px;
-}
-
-.container-form .btn-enviar {
-    padding: 15px;
-    font-size: 16px;
-    border: none;
-    outline: 0px;
-    background: #FF393E;
-    color: white;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-
-.container-form .btn-enviar:hover {
-    background: #FFA0A0;
 }
 
 .mainOfertas main {
