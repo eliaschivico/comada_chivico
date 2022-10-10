@@ -37,7 +37,7 @@ button {
     background-color: #FF393E;
     font-size: 1.75em;
 
-    }
+}
 
 
 button:hover {
@@ -176,7 +176,7 @@ main {
 
 
 #section-edite-oneCon {
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,61 +188,120 @@ main {
     padding: 200px 12px;
 }
 
-:root {
-    --colorTextos: #49454567;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$fuente-principal: 'Roboto',
+sans-serif;
+$color-principal:#9A100D;
+$bk1: 700px;
+
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    font-family: $fuente-principal;
+    color: $color-principal;
+    line-height: 1.5;
+}
 
+.contenedor {
+    max-width: 1170px;
+    margin: 0 auto 1rem;
+    padding: 1.5rem;
+}
 
-h1{
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba($color-principal, .7);
+    border-radius: 5px;
+
+    @media screen and(min-width: $bk1) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.servicios {
+    list-style: none;
     text-align: center;
-    font-weight: 700;
+
+    @media screen and(min-width: $bk1) {
+        text-align: left;
+    }
 }
 
+.info-empresa {
+    padding: 1rem;
+    background-color: lighten($color-principal, 50%);
 
-.form{
-    width: 100%;
-    margin: auto;
+    h3 {
+        @media screen and(min-width: $bk1) {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        text-align: center;
+    }
 }
 
-form .grupo{
-    position: relative;
-    margin: 45px ;
+.nombre-empresa {
+    color: darken($color-principal, 15%);
 }
 
-input{
-    background: none;
-    color: #c6c6c6;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
+.contacto {
+    padding: 1rem;
+    background-color: lighten($color-principal, 60%);
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25rem;
+
+    label {
+        display: block;
+    }
+
+    button,
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid lighten($color-principal, 50%);
+    }
+
+    textarea {
+        resize: none;
+    }
+}
+
+.full {
+    grid-column: 1 / 3;
+}
+
+.boton-enviar {
+    background-color: lighten($color-principal, 50%);
     border: none;
-    border-bottom: 1px solid var(--colorTextos);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+        background-color: $color-principal;
+        color: #9A100D;
+        outline: 0;
+        transition: background-color 2s ease-out;
+    }
 }
-
-input:focus{ 
-    outline: none;
-    color: #5e5d5d;
-}
-
-label{
-    color: var(--colorTextos);
-    font-size: 16px;
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    transition: 0.5s ease all;
-    pointer-events: none;
-}
-
-
-.barra{
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
 
 #section-edite-oneDep {
     font-weight: 400;
@@ -267,7 +326,7 @@ label{
 
 
 #section-edite-oneOfer {
-    
+
     color: #ffffff;
     text-align: center;
     padding: 200px 12px;
@@ -316,7 +375,7 @@ label{
 }
 
 .conte {
-    background-color: #FFA0A0;
+    background-color: #ffffff;
 }
 
 .conte .damas img {
